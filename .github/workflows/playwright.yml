@@ -26,6 +26,7 @@ jobs:
     - name: Run E2E tests
       run: yarn playwright test
 
+    - name: Publish HTML Report
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
